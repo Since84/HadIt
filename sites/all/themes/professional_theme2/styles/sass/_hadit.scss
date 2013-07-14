@@ -1,0 +1,69 @@
+/**  
+HADIT Base Styles
+**/
+
+/*-- Colors --*/
+$main : #f8f8f8;
+
+$red : #CF001B;
+$white : #FFF;
+$blue : #2E284E;
+
+$dark : #010B15;
+$darkSub : #2F3574;
+$gold : #FAB950;
+
+@mixin redGradient {
+	background: #cf001b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cf001b 1%, #cf001b 37%, #e82727 66%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#cf001b), color-stop(37%,#cf001b), color-stop(66%,#e82727)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cf001b 1%,#cf001b 37%,#e82727 66%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cf001b 1%,#cf001b 37%,#e82727 66%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cf001b 1%,#cf001b 37%,#e82727 66%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cf001b 1%,#cf001b 37%,#e82727 66%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf001b', endColorstr='#e82727',GradientType=0 ); /* IE6-9 */
+} 
+ 
+/*-- Fonts --*/
+
+@mixin AsapNormal {
+	@font-face {
+	  font-family: 'Asap';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local('Asap'), local('Asap-Regular'), url(http://themes.googleusercontent.com/static/fonts/asap/v1/nvGvEwsMAvkIa6w2U-PXffesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+	}
+}
+
+@mixin AsapBold {
+	@font-face {
+	  font-family: 'Asap';
+	  font-style: normal;
+	  font-weight: 700;
+	  src: local('Asap Bold'), local('Asap-Bold'), url(http://themes.googleusercontent.com/static/fonts/asap/v1/QGN0GG0540fyG6NL_PpOpgLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+	}
+}
+
+/*-- Typography --*/
+@mixin headerLink {
+	color: $blue;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

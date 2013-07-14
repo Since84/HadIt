@@ -1,0 +1,264 @@
+@import "hadit";
+@import "compass/reset"; 
+@import url(http://fonts.googleapis.com/css?family=Donegal+One);
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700);
+
+body {  
+	font-family: "Asap", verdana; 	
+	font-size: 14px;
+	line-height: 1.33; 
+	background: $main;
+	// background: $dark;
+	
+	em { font-style: italic; }
+	strong { font-weight: bold; }
+}
+
+#container {
+	background: $white;
+	margin: auto;
+	border: 1px solid #ccc;
+	border-width: 0 1px;
+}
+
+.header-wrap { background: $dark url('../../images/banner_01.png') no-repeat 0 0; }
+.header {
+	// height: 150px;
+	max-width: 1132px; 
+	margin:auto;
+	.hadit-quote {
+		color: white;
+		font-size: 17px; 
+		padding: 20px;
+		display: inline-block;
+		text-transform: uppercase;
+		text-align: center;
+		width: auto;
+		font-family: "Donegal One", serif;
+		margin-left: 100px;
+		.tbird-left{ float: right; }
+	}
+}
+
+#logo {
+	width: 123px;
+	padding-top: 0px;
+}
+.soldier-img {
+	display: inline-block;
+	vertical-align: bottom;
+	float: right;
+}
+
+/* Layout */
+.content-wrap { width: 100%;}
+.page-content, .sidebar { display: inline-block; margin-top: 0px; }
+.page-content { 
+	width: 52%; 
+	margin: 0;
+	border: 1px solid #ccc;
+	border-width: 0 1px;
+	
+	.page-title { margin-bottom: 10px; }
+	.tabs-wrapper { 
+		margin-bottom: 10px; 
+		.tabs {
+			border-bottom: 1px solid $blue;
+			li a {
+				color: $blue;
+				-webkit-border-radius: 0px;
+				-moz-border-radius: 0px;
+				border-radius: 0px;
+				padding: 2px 10px;
+				&.active {background: $blue; color: $gold; }
+			}
+		}
+	}
+	
+	#post-content {
+		padding: 20px;
+	}
+	article {
+		padding: 20px;
+		padding-top: 0;
+		border-bottom: 1px solid #ccc;
+		background: $white;
+		header {}
+		footer {
+			margin-top: 10px;
+			.links {
+				a { 
+					padding: 5px 10px; background: $red; border: 1px solid $red; color: white; 
+					&:hover { background: $blue; border: 1px solid $gold; }
+				}
+			}
+		}
+		img {
+			margin: 10px;
+		}
+	}
+	.text-content p {
+		padding: 10px;	
+	}
+}
+
+.sidebar { 
+	width: 21%;
+	// padding: 0 1%; 	
+}
+#sidebar-first {
+	.margin: .5%;
+	.content { margin: 20px; img { margin-bottom: 10px;} }
+	#block-fb-likebox-0 {
+		margin: 10px;
+	}
+	.block-fb-likebox .content { margin: 0; }
+}
+#sidebar-second {
+	padding: 0 25px;
+	background: $blue;
+	border: 1px solid $gold;
+	border-width: 1px 0 1px 1px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+	.label { color: white; }
+	h2.title {
+		margin-bottom: 10px;
+		a { color: white; }
+	}
+}
+
+/* Typography */
+h2 { padding: 5px; font-family: "Donegal One", serif; font-size: 14px; }
+h2.title {
+	padding-left: 0px;
+	a {
+		margin: 0px;
+		color: $blue;
+	}
+}
+p {
+	margin-bottom: 3.3%;
+}
+
+/* Gallery */ 
+.hadit-image-gallery {
+	min-height: 292px;
+}
+#adv-custom-pager { 
+	margin-top: 10px; 
+	a { 
+		opacity: .5; 
+		margin-right: 10px;
+		&:hover, &.cycle-pager-active { opacity: 1; }
+	}
+}
+
+/* Navigation */
+.menu {
+	a{ margin: 0px; }
+}
+#main-menu {
+	// @include redGradient;
+	background: $red;
+	border: 1px solid $gold;
+	border-width: 1px 0;
+	li ul { background: $blue;}
+	li > a {
+		margin: 5px; 
+		font-size: 14px;
+		border: 1px solid transparent;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		&:hover {
+			background: $red;
+			// border-color: $gold;
+		}
+		&.active {
+			background: $blue;
+			color: $gold;
+			border: 1px solid $gold;
+			text-transform: uppercase;
+		}
+
+	}
+	li li a {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+}
+.menu-navigation-container {
+max-width: 1132px;
+margin: auto;
+}
+
+/* Ad */
+.google-ad {
+	margin: auto;
+	width: 768px;
+	padding-top: 5px;
+}
+
+.footer {
+	background: $blue;
+	border-top: 1px solid $gold; 
+	.google-ad { padding-top: 0; }
+}
+
+/* Store */ 
+.field-name-uc-product-image { width: auto; margin: 20px; }
+
+
+
+@media screen and (max-width: 891px) {
+	.header .hadit-quote {margin-left: 0; font-size: 100%;}
+}
+
+
+/* Suicide Hotline Block */
+#block-block-5 {
+	color: $blue;
+	background: #f8f8f8;
+	margin: 10px;
+	margin-right: 0px;
+/* 	line-height: 1; */
+	padding: 3px 0;
+	border: 1px solid $blue;
+}
+	
+.block:not(#block-system-main) {
+	padding-bottom: 10px;
+	margin: 0 10px 10px;
+}
+
+#block-views-product-block {
+	border: 1px solid #ccc;
+	.content{
+		margin-bottom: 0px;
+	}
+}
+
+.view-product {
+	.field-content {
+		font-size: 16px;
+		margin-bottom: 10px;
+		display: block;
+		.uc-price {
+			font-size: 18px;
+			color: black;
+			font-weight: bold;
+		}
+	}
+	input[type="submit"]{
+		background: green;
+		color: white;
+		text-shadow: none;
+	}
+}

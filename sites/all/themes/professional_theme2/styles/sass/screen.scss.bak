@@ -1,0 +1,202 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "hadit";
+@import "compass/reset"; 
+@import url("http://fonts.googleapis.com/css?family=Asap:400,700");
+body { background: $main; font-family: "Asap", verdana; }
+// a:link { color: $dark; }
+
+/**-- Typography --**/
+.node h2.title a {
+	@include headerLink;
+}
+
+/**-- Header --**/
+header#header { margin-top: 20px; }
+
+.title {
+	width: 750px; 
+	margin:auto; 
+	#site-title a { color: $dark; }
+}
+#site-title { 
+	margin: 40px 0;
+	line-height: normal; 
+} 
+#logo {
+	display: block;
+	background: url("../../images/logo/haditlogo2007_dark.jpg") no-repeat 50% 50%;
+	width: 160px;
+	height: 160px;
+	background-size: 160px auto;
+	margin-right: 20px;
+}
+.header-image {
+	display: block;
+	height: 180px;
+	width: 100%;
+	position: relative;
+	clear: both;
+	background: url('../../images/js-header/top_2.jpg') 100% 50% no-repeat; //temporary
+}
+
+/**-- Menu --**/
+ul.menu {
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 0;
+	.leaf {
+		font-size: 16px;
+		display: inline-block;
+		margin: 0;
+		margin-right: 2px; 
+	}
+}
+
+#main-menu { 
+	background: none;
+	text-transform: uppercase;
+	// background: $dark; 
+	// border: 1px solid $dark;
+/*
+	border: 1px solid $dark;
+	border-width: 1px;
+*/
+/* 	border-bottom: 5px solid $dark; */
+/*
+	-webkit-border-top-left-radius: 80px;
+	-moz-border-radius-topleft: 80px;
+	border-top-left-radius: 80px;
+*/
+/* 	padding: 0 40px; */
+	
+	& li > a { 
+/* 		font-weight: 700; */
+		letter-spacing: 1px;
+		font-size: 14px;
+		// color: $gold;
+		
+
+	}
+	& li > a.active {
+/* 		font-weight: 700; */
+		border-bottom: none;
+		color: white;
+		// background: $red;
+/* 		background: #cf001b; Old browsers */
+		// @include redGradient;
+/* 		border: 1px solid $gold; */
+		border-width: 0 1px;
+		font-weight: 700;
+
+	}
+	& li > a:not(.active):hover {
+		// background: #e82727; /* Old browsers */
+		// background: -moz-linear-gradient(top,  #e82727 34%, #cf001b 63%, #cf001b 99%); /* FF3.6+ */
+		// background: -webkit-gradient(linear, left top, left bottom, color-stop(34%,#e82727), color-stop(63%,#cf001b), color-stop(99%,#cf001b)); /* Chrome,Safari4+ */
+		// background: -webkit-linear-gradient(top,  #e82727 34%,#cf001b 63%,#cf001b 99%); /* Chrome10+,Safari5.1+ */
+		// background: -o-linear-gradient(top,  #e82727 34%,#cf001b 63%,#cf001b 99%); /* Opera 11.10+ */
+		// background: -ms-linear-gradient(top,  #e82727 34%,#cf001b 63%,#cf001b 99%); /* IE10+ */
+		// background: linear-gradient(to bottom,  #e82727 34%,#cf001b 63%,#cf001b 99%); /* W3C */
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e82727', endColorstr='#cf001b',GradientType=0 ); /* IE6-9 */
+
+	}
+	
+}
+
+/**-- Container --**/
+#container {
+	margin-top: 0px; 
+}
+
+body.two-sidebars .content-sidebar-wrap {
+	width: 73%
+}
+
+
+/**-- Content --**/
+#post-content {
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 0 10px;
+    
+    p, ol, ul, h1, h2, h3, h4{
+	    margin-bottom: 1em;
+    }
+    ol { list-style: inside decimal; }
+    h2 { font-size: 18px; font-weight: bold; }
+    img{ margin: 10px; }
+    a:link { color: #3b5998; }
+    
+}
+.node {
+    margin: 10px 0 30px;
+}
+.node header {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.content.node-page {
+	margin-bottom: 20px;
+}
+
+.links li a {
+	// @include redGradient;
+	text-decoration: none;
+}
+
+
+.links {
+	li {
+		a{
+			background: none;
+			padding: 8px;
+			font-size: 12px;
+			text-transform: uppercase;
+			// color: $dark;
+			// border: 1px solid $gold;
+			&:hover {
+				// @include redGradient;
+				color: white;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+/**-- Right Sidebar --**/
+body.two-sidebars #sidebar-second {
+	width: 29%;
+	
+	table { background: none; }
+	.submitted { display: none;}
+	
+	.wdform_table1 .wdform_tbody1{
+		text-align: left;
+	}
+	#form44 .wdform_table {
+		padding-left: 0px !important;
+	}
+}
+
+/**-- iFrames --**/
+.google-ad {
+	width: 768px;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
